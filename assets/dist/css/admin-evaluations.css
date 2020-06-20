@@ -1,0 +1,131 @@
+/*!
+ * Lantern Forms Version 1.0.7 (https://lantern-forms.com)
+ * Licensed under GNU General Public License v2 (or later) (http://www.gnu.org/licenses/gpl-2.0.html)
+ */
+/* ----------------------------------------------------------------------------
+  1.0 - Lantern Evaluations Tabs
+---------------------------------------------------------------------------- */
+.lantern-evaluations-box.postbox .inside {
+	padding: 0;
+	margin: 0;
+}
+
+.lantern-evaluations-box.postbox .inside:after {
+	display: table;
+	clear: both;
+	content: "";
+}
+
+.lantern-evaluations-tabs,
+.lantern-evaluations-content {
+	position: relative;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	display: block;
+	min-height: 1px;
+	margin: 0;
+}
+
+@media screen and (min-width: 783px) {
+	.lantern-evaluations-tabs {
+		float: left;
+		width: 20%;
+	}
+}
+
+@media screen and (min-width: 783px) {
+	.lantern-evaluations-content {
+		float: left;
+		width: 80%;
+	}
+}
+
+.lantern-evaluations-tab {
+	display: block;
+	padding: 11px 12px;
+	border-bottom: 1px solid #eee;
+}
+
+.lantern-evaluations-tab[aria-selected="true"] {
+	color: #555;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+@media screen and (min-width: 783px) {
+	.lantern-evaluations-tab {
+		border-right: 1px solid #eee;
+	}
+	.lantern-evaluations-tab[aria-selected="true"] {
+		border-right: 1px solid #fff;
+	}
+}
+
+.lantern-evaluations-tab-panel[aria-hidden="true"] {
+	display: none;
+}
+
+.lantern-evaluations-description-wrap,
+.lantern-evaluations-results,
+.lantern-evaluations-shortcode {
+	padding: 11px 12px;
+}
+
+.lantern-evaluations-description-wrap p.description {
+	margin: 0;
+}
+
+/* ----------------------------------------------------------------------------
+  2.0 - Lantern Evaluations Sub-Tabs
+---------------------------------------------------------------------------- */
+.lantern-evaluations-subtabs,
+.lantern-evaluations-subcontent {
+	position: relative;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	display: block;
+	min-height: 1px;
+	margin: 0;
+}
+
+.lantern-evaluations-subtabs {
+	border-bottom: 1px solid #eee;
+}
+
+.lantern-evaluations-subtab {
+	display: inline-block;
+	padding: 11px 12px;
+}
+
+.lantern-evaluations-subtab[aria-selected="true"] {
+	color: #555;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.lantern-evaluations-subtab-panel[aria-hidden="true"] {
+	display: none;
+}
+
+/* ----------------------------------------------------------------------------
+  3.0 - Global Postbox Fixes
+---------------------------------------------------------------------------- */
+.postbox h2 {
+	padding: 8px 12px;
+	margin: 0;
+	font-size: 14px;
+	line-height: 1.4;
+}
+
+.js .postbox .toggle-indicator:before {
+	display: inline-block;
+	content: "\f142";
+	font: normal 20px/1 dashicons;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	text-decoration: none !important;
+
+	speak: none;
+}

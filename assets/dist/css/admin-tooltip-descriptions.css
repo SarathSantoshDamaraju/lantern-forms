@@ -1,0 +1,48 @@
+/*!
+ * Lantern Forms Version 1.0.7 (https://lantern-forms.com)
+ * Licensed under GNU General Public License v2 (or later) (http://www.gnu.org/licenses/gpl-2.0.html)
+ */
+.lantern-tooltip-wrap {
+	position: relative;
+	display: inline;
+}
+
+.lantern-tooltip-button {
+	padding: 0;
+	color: #666;
+	line-height: 1;
+	vertical-align: middle;
+	cursor: help;
+}
+
+.lantern-tooltip-description,
+p.description.lantern-tooltip-description {
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+	z-index: 10;
+	width: 1px;
+	overflow: hidden;
+	color: #fff;
+	text-align: center;
+	background: #333;
+	border-radius: 3px;
+}
+
+.lantern-tooltip-button:hover + .lantern-tooltip-description,
+.lantern-tooltip-button:focus + .lantern-tooltip-description,
+.lantern-tooltip-button:hover + p.description.lantern-tooltip-description,
+.lantern-tooltip-button:focus + p.description.lantern-tooltip-description {
+	top: 100%;
+	left: 0;
+	width: 250px;
+	padding: 0.5em 1em;
+}
+
+.js .has-lantern-tooltip-description .content-wrap > .description:not(.lantern-tooltip-description) {
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+	width: 1px;
+	overflow: hidden;
+}
